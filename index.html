@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input id="fr" placeholder="Texte français…" />
+    <button id="go">Traduire</button>
+    <div id="la"></div>
+
+    <script>
+      // ATTEND que window.api soit disponible
+      window.addEventListener("DOMContentLoaded", () => {
+        const btn = document.getElementById("go");
+        const frInput = document.getElementById("fr");
+        const laDiv = document.getElementById("la");
+
+        btn.addEventListener("click", async () => {
+          const fr = frInput.value.trim();
+          console.log("Appel API pour:", fr);
+          const la = await window.api.translate(fr);
+          console.log("Réponse LATIN:", la);
+          laDiv.innerText = la || "— pas de traduction —";
+        });
+      });
+    </script>
+  </body>
+</html>

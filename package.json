@@ -1,0 +1,26 @@
+{
+  "name": "traductor_to_latin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "backend": "python main.py",
+    "frontend": "electron .",
+    "start": "concurrently -k -n \"PY,EL\" -c \"cyan,magenta\" \"npm:backend\" \"npm:frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blanchetamaury/traductor_to_latin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blanchetamaury/traductor_to_latin/issues"
+  },
+  "homepage": "https://github.com/blanchetamaury/traductor_to_latin#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "electron": "^37.2.3"
+  }
+}

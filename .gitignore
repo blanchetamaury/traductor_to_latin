@@ -7,7 +7,7 @@ yarn-error.log*
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+report.[-9]*.[-9]*.[-9]*.[-9]*.json
 
 # Runtime data
 pids
@@ -85,13 +85,13 @@ dist
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
+# https://nextjs.org/blog/next-9-#public-directory-support
 # public
 
 # vuepress build output
 .vuepress/dist
 
-# vuepress v2.x temp and cache directory
+# vuepress v.x temp and cache directory
 .temp
 .cache
 
@@ -125,7 +125,7 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# yarn v3
+# yarn v
 .pnp.*
 .yarn/*
 !.yarn/patches

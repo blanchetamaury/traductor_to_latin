@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "backend": "python main.py",
+    "backend": "python ../backend/main.py",
     "frontend": "electron .",
     "start": "concurrently -k -n \"PY,EL\" -c \"cyan,magenta\" \"npm:backend\" \"npm:frontend\"",
     "test": "echo \"Error: no test specified\" && exit 1"
